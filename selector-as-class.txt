@@ -1,0 +1,30 @@
+//selector as a class
+//this code snippet belongs to test.component.ts
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '.app-test',
+  template: `
+  `,
+
+  styles: []
+})
+export class TestComponent implements OnInit {
+ 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+
+}
+
+
+//the below lines of code belong to app.component.html
+
+<div style="text-align: center;">
+  <h1>
+    welcome to Angular basics!
+  </h1>
+</div>
+<div class="app-test"></div>
