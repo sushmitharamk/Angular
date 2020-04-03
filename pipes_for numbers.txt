@@ -1,0 +1,26 @@
+//checking the working of pipes
+//this code snippet belongs to test.component.ts file
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  template: `
+  <h2>{{29.04 | number : '1.2-3'}}</h2>
+  <h2>{{29.04 | number : '3.3-4'}}</h2>
+  <h2>{{29.04 | percent}}</h2>
+  <h2>{{29.04 | currency}}</h2>
+  <h2>{{29.04 | currency : 'GBB'}}</h2>
+  `,
+
+  styles: []
+})
+export class TestComponent implements OnInit {
+ 
+ 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+
+}
